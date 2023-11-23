@@ -9,15 +9,17 @@
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background: linear-gradient(to right, #a8e6cf, #dcedc1); /* 有變化的淺綠色漸變背景 */
             color: #333;
+            scroll-behavior: smooth;
         }
 
         header {
-            background-color: #2ecc71;
+            background-color: #7ebc89; /* 淺綠色 */
             color: #fff;
             text-align: center;
             padding: 1em;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
         section {
@@ -26,21 +28,87 @@
             padding: 20px;
             background-color: #fff;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        section:hover {
+            transform: scale(1.02);
         }
 
         h2 {
-            color: #2ecc71;
+            color: #7ebc89; /* 淺綠色 */
+        }
+
+        button {
+            background-color: #a8e6cf; /* 淺淺綠色 */
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #7ebc89; /* 淺綠色 */
         }
 
         footer {
-            background-color: #2ecc71;
+            background-color: #7ebc89; /* 淺綠色 */
             color: #fff;
             text-align: center;
             padding: 1em 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        .overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .popup {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        .close-btn {
+            background-color: #a8e6cf; /* 淺淺綠色 */
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .moving-image {
+            max-width: 100%;
+            height: auto;
+            position: fixed;
+            top: 0;
+            left: 0;
+            opacity: 0.8;
+            pointer-events: none;
+            z-index: -1;
         }
     </style>
 </head>
 <body>
+
+    <img src="https://via.placeholder.com/1200x800" alt="Moving Image" class="moving-image">
 
     <header>
         <h1>綠色循環設計</h1>
@@ -59,29 +127,20 @@
         <h2>綠色循環目標</h2>
         <p>確立綠色循環的目標，包括減少碳足跡、提倡再生利用等，並以平面設計方式傳遞信息。</p>
 
-        <!-- 其他內容... -->
+        <button onclick="showPopup()">了解更多</button>
 
+        <div class="overlay" id="overlay" onclick="hidePopup()">
+            <div class="popup">
+                <p>這裡可以放更多有關你畢業製作的內容...</p>
+                <button class="close-btn" onclick="hidePopup()">關閉</button>
+            </div>
+        </div>
     </section>
 
     <section>
         <h2>設計與實現</h2>
         <!-- 內容... -->
+        <img src="https://via.placeholder.com/800x400" alt="Design and Implementation" style="max-width: 100%; height: auto; margin-top: 20px;">
     </section>
 
-    <section>
-        <h2>成果展示</h2>
-        <!-- 內容... -->
-    </section>
-
-    <section>
-        <h2>反思與未來展望</h2>
-        <!-- 內容... -->
-    </section>
-
-    <footer>
-        <p>聯絡方式：your@email.com</p>
-        <p>社交媒體連結： <a href="#">Facebook</a> | <a href="#">Twitter</a></p>
-    </footer>
-
-</body>
-</html>
+    <section
