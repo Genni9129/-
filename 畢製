@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>綠色循環設計</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #2ecc71;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #2ecc71;
+        }
+
+        footer {
+            background-color: #2ecc71;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>綠色循環設計</h1>
+    </header>
+
+    <section>
+        <h2>簡介</h2>
+        <p>這個畢業製作致力於通過平面設計探討環境問題，並提出綠色循環的解決方案。</p>
+
+        <h2>平面設計理念</h2>
+        <p>融入簡約、清新的設計風格，以直觀的視覺效果來表達環境與可持續發展的關聯。</p>
+
+        <h2>環境探索</h2>
+        <p>深入研究不同環境問題，包括氣候變化、資源浪費等，並透過設計呈現相應的信息。</p>
+
+        <h2>綠色循環目標</h2>
+        <p>確立綠色循環的目標，包括減少碳足跡、提倡再生利用等，並以平面設計方式傳遞信息。</p>
+
+        <!-- 其他內容... -->
+
+    </section>
+
+    <section>
+        <h2>設計與實現</h2>
+        <!-- 內容... -->
+    </section>
+
+    <section>
+        <h2>成果展示</h2>
+        <!-- 內容... -->
+    </section>
+
+    <section>
+        <h2>反思與未來展望</h2>
+        <!-- 內容... -->
+    </section>
+
+    <footer>
+        <p>聯絡方式：your@email.com</p>
+        <p>社交媒體連結： <a href="#">Facebook</a> | <a href="#">Twitter</a></p>
+    </footer>
+
+</body>
+</html>
